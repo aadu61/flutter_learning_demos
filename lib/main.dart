@@ -2,6 +2,7 @@ import 'package:demo_pizza/screens/3d_modle_render.dart';
 import 'package:demo_pizza/screens/complex_ui/3d_drawer_screen.dart';
 import 'package:demo_pizza/screens/complex_ui/3d_rotation.dart';
 import 'package:demo_pizza/screens/complex_ui/animated_drawer.dart';
+import 'package:demo_pizza/screens/logi_question.dart';
 import 'package:demo_pizza/screens/pizza_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -89,6 +90,14 @@ class MyHomePage extends StatelessWidget {
             title: const Text("3D Modle Rendering"),
             onTap: (){
               Get.to(()=>const ModleRender());
+            },
+
+          ),
+          ListTile(
+            contentPadding: const EdgeInsets.symmetric(vertical: 10,horizontal: 10),
+            title: const Text("Logical Question"),
+            onTap: (){
+              Get.to(()=>const LogicQuestion());
             },
 
           )
